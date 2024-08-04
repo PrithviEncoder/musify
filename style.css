@@ -142,8 +142,6 @@ opacity: 1;
         flex-wrap: wrap;
         column-gap: 10px;
         width: 98vw;
-        margin:40px auto;
-        border:1px solid rgba(3, 3, 3, 0.775);
         justify-content: center;
         overflow: hidden;
         background-image: url('./images/King.jpg');
@@ -175,10 +173,8 @@ opacity: 1;
         /* margin: auto; it will not work since i have given position or sticky */
         border: 1px solid;
         bottom: 30px;
-        background-color: white;
-        left: 10%;
-        border-radius: 10px;
-        
+        left: 5%;
+    
     }
 
     #main-play{width: 60px;}
