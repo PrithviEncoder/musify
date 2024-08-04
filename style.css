@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.logo{
+    height: 50px;
+    margin-top: 4px;
+    margin-left: 16px;
+    /* border-radius:50%; */
+}
+nav{
+    height:60px;
+    background-color:black;
+
+}
+nav ul{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    align-items:center;
+}
+nav ul li{
+    color:white;
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 80vw;
+    margin:40px auto;
+    border:1px solid rgba(3, 3, 3, 0.775);
+    justify-content: space-between;
+    overflow: hidden;
+    background-image: url('./images/King.jpg');
+   
+}
+
+
+.background{
+position: absolute;
+height: 100%;
+
+
+}
+.card{
+    height: 100px;
+   width: 500px;
+   /* min-width:300px; */
+    border: 1px solid ;
+    background-color:#ffcab0;
+    color:white;
+    border-radius:8px;
+    display: flex;
+    min-width:400px;
+    overflow: hidden;
+    margin:20px 0 0 20px;   
+    }
+
+.play{
+opacity: 1;
+    
+
+}
+.imageContainer{
+    height:100%;
+    width:150px;
+}
+.image{
+
+    height: 100%;
+    width: 100%;
+    
+   
+}
+.info{
+    width:280px;
+    margin-left: 15px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: .4rem;
+    /* flex-wrap: wrap; */
+
+}
+.playBox{
+    height: 150px;
+    width: 80%;
+    /* margin: auto; it will not work since i have given position or sticky */
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 30px;
+    background-color: white;
+    left: 10%;
+    border-radius: 10px;
+    
+}
+.playBox:hover{
+    opacity: .8;
+}
+
+.playElement{
+    /* width: 300px; */
+    
+    margin: auto;
+}
+#progressBar{
+    width: 80%;
+    margin: auto;
+    
+}
+.currentSong{
+    margin-left: 120px;
+}
+#song{
+    font-weight:510;
+    color:rgb(116, 108, 108)
+}
+#song-name{
+    color:rgb(116,108,108);
+}
+
+
+.animation img{
+    height:17px;
+    width: 70px;
+}
+.animation{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+@media (max-width:650px){
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        width: 98vw;
+        margin:40px auto;
+        border:1px solid rgba(3, 3, 3, 0.775);
+        justify-content: center;
+        overflow: hidden;
+        background-image: url('./images/King.jpg');
+       
+    }
+    .card{
+        height: 300px;
+       width: 130px;
+       /* min-width:300px; */
+        flex-direction: column;
+        min-width:150px;        
+        margin:20px 0 0 0px;    
+
+    }
+
+    .info{
+        width:280px;
+        margin-left: 5px;
+        flex-wrap: wrap;
+    }
+
+    .play{
+        width:80px;
+        margin: auto;
+    }
+    .playBox{
+        height: 100px;
+        width: 90%;
+        /* margin: auto; it will not work since i have given position or sticky */
+        border: 1px solid;
+        bottom: 30px;
+        background-color: white;
+        left: 10%;
+        border-radius: 10px;
+        
+    }
+
+    #main-play{width: 60px;}
+    #previous-song{width:60px;}
+    #next-song{width:60px;}
+
+    .currentSong{
+        margin-left: 5%;
+    }
+}

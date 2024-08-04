@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musify</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img class="logo" src="./images/logo.png"></li>
+                <li>Home</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <img class="image" src="./images/King.jpg" alt="artist image">
+
+
+        </div>
+
+
+        <div class="playBox">
+
+            <input type="range" id="progressBar" min="0" max="100" value="0">
+
+            <div class="currentSong">
+                <span class="animation"><img src="./images/animation.gif"></span>
+                <span id="song">Song :</span>
+                <span id="song-name"></span>
+            </div>
+
+            <div class="playElement">
+                <img id="previous-song" src="./images/skip_previous.png">
+
+                <img src="./images/play.png" id="main-play" alt="play_button">
+
+                <img id="next-song" src="./images/skip_next.png">
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="music_list.js"></script>
+    <script src="musify.js"></script>
+
+</body>
+
+</html>
